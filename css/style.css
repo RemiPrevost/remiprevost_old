@@ -41,11 +41,12 @@
     margin-bottom:30px;
 }
 
+
 #section_cv {
     background-color: #33DD51;
 }
 
-    #section_cv h2, #section_cv h3 {
+    #section_cv h2, #section_cv h3, #section_cv h4{
         color: white;
     }
 
@@ -54,6 +55,11 @@
         width: 40px;
         height: 3px;
     }
+
+
+.timeline-label h4 {
+    color: #23527C !important;
+}
 
 h1 {
     padding-top: 30px;
@@ -84,7 +90,7 @@ h2 {
     font-size: 2.5em;
 }
 
-.row h4 {
+.timeline-label h4 {
     text-align: left;
     font-size: 1.5em;
 }
@@ -92,10 +98,6 @@ h2 {
 .titre_label {
     top: -10px;
     margin-left: 15px;
-}
-
-.formation h4 {
-    text-align: center;
 }
 
 .timeline-centered .timeline-entry {
@@ -493,8 +495,19 @@ img {
                     }
 
 
+
 .description {
     text-align: justify;
+}
+
+#competences i{
+    color: white;
+    font-size: 2em;
+}
+
+.progress {
+    margin-top:9px;
+    max-width: 400px;
 }
 
 .progress-bar {
