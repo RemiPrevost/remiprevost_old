@@ -106,7 +106,7 @@
             </div>
         </section>
 
-        <section id="section_cv" class="col-xs-12">s      
+        <section id="section_cv" class="col-xs-12">      
 
             <h2>CV</h2>
             <hr class="hr_titre" />
@@ -1111,7 +1111,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div id="work_rj" class="panel panel-default">
+                    <div id="work_mf" class="panel panel-default">
 
                         <div class="panel-heading">
                             <div class="row">
@@ -1163,7 +1163,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div id="work_" class="panel panel-default">
+                    <div id="work_tl" class="panel panel-default">
 
                         <div class="panel-heading">
                             <div class="row">
@@ -1179,7 +1179,33 @@
                             <div class="row">
                                 <img src="img/tir_sur_cible.png" alt="Tir-Laser" title="Tir-Laser" style="width:20%;height:20%" />
                                 <p>
-                                    Description
+                                    Voici un projet réalisé dans le cadre d'un bureau d'étude à l'INSA, encadré par Thierry Rocacher. Nous
+                                    avons travaillé à deux sur ce projet. Nous avions comme matériel fourni, des pistolets laser capable d'envoyer
+                                    des lasers sous différentes fréquences pour différencier les joueurs, une photodiode, un carte STM32, des
+                                    enceintes sonores et une carte avec 4 paires afficheurs 7 segments (une paire par joueur). L'objectif était de concevoir l'électronique et
+                                    le programme qui permettrait de détecter un tir sur la cible, qui n'est autre que la photodiode, de jouer un
+                                    son et puis d'incrémenter un score affiché sur les afficheurs 7 segments.
+                                </p>
+                                <p>
+                                    Il fallait être capable de savoir quel utilisateur a touché la cible. La signature de l'utilisateur est la
+                                    fréquence du rayon laser reçu. Il faillait donc être capabales de détecter la ou les fréquences reçues par
+                                    la photodiode. Il y a donc eut mise en place d'une Transformée de Fourrier afin de détecter les fréquences
+                                    présentes dans le signal produit par la photodiode. Cette transformée est réalisé par le programme écrit en C et
+                                    en Assembleur et chargé sur la carte STM32.
+                                </p>
+                                <p>
+                                    Il fallait adapter le signal produit par la photodiode à l'entrée de la carte STM32. Nous avons donc construit
+                                    en amont de la carte un circuit électrique capable de filtrer le signal et de l'adapter à l'entrée de la carte.
+                                </p>
+                                <p>
+                                    Le programme en C et en Assembleur est également l'intelligence qui retient les scores des joueurs, les
+                                    incrémente, modifie l'état des afficheurs 7 segments et joue le son à chaque fois qu'un joueur touche la cible
+                                </p>
+                                <p>
+                                    Cette petite vidéo présente le résultat final, une fois tous les éléments intégrés et fonctionnels. Le pistolet est relié 
+                                    à un boîtier sur lequel est présent une curseur permettant de faire varier la fréquence du laser et donc d'être le joueur
+                                    1, 2, 3 ou 4. Vous noterez qu'un son est produit à chaque tir sur la photodiode et que le score du joueur en question
+                                    est incrémenté sur l'afficheur.
                                 </p>
                             </div>
 
@@ -1196,7 +1222,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div id="work_" class="panel panel-default">
+                    <div id="work_tcp" class="panel panel-default">
 
                         <div class="panel-heading">
                             <div class="row">
@@ -1241,7 +1267,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div id="work_" class="panel panel-default">
+                    <div id="work_graphes" class="panel panel-default">
 
                         <div class="panel-heading">
                             <div class="row">
@@ -1286,7 +1312,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4">
-                    <div id="work_" class="panel panel-default">
+                    <div id="work_agg" class="panel panel-default">
 
                         <div class="panel-heading">
                             <div class="row">
